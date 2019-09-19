@@ -1,54 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/build/tailwind.css">
-    <link rel="stylesheet" href="/debug-v1.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/build/tailwind.css" />
+    <link rel="stylesheet" href="/debug-v1.css" />
+    <style>
+      .box {
+        height: 6px;
+        background-color: rgb(217, 252, 255);
+      }
+    </style>
     <title>Kronax - Multicurrency E-Wallet</title>
-</head>
-<body class="antialiased ">
-<nav class="max-w-6xl mx-auto mt-6 ml-8">
-    <div class="flex items-center">
-        <div class="flex flex-row items-center font-extrabold tracking-wide uppercase text-sm">
-            <img src="images/logo.png" alt="logo">
-            <p>Kronax</p>
+  </head>
+  <body class="antialiased">
+    <nav class="max-w-6xl mx-auto mt-6 ml-8">
+      <div class="flex items-center">
+        <div
+          class="flex flex-row items-center font-extrabold tracking-wide uppercase text-sm"
+        >
+          <img src="images/logo.png" alt="logo" />
+          <p>Kronax</p>
         </div>
-        <ul class="ml-16 inline-flex justify-between text-gray-700 text-sm ">
-            <li><a href="#">About us</a></li>
-            <li class="ml-6"><a href="#">Legal Information</a></li>
-            <li class="ml-6"><a href="#">FAQ</a></li>
-            <li class="ml-6"><a href="#">Support</a></li>
+        <ul class="ml-16 inline-flex justify-between text-gray-700 text-sm">
+          <li class="hover:text-gray-900"><a href="#">About us</a></li>
+          <li class="ml-6 hover:text-gray-900">
+            <a href="">Legal Information</a>
+          </li>
+          <li class="ml-6 hover:text-gray-900"><a href="#">FAQ</a></li>
+          <li class="ml-6 hover:text-gray-900"><a href="#">Support</a></li>
         </ul>
-    </div>
-</nav>
-<main class="">
-    <div class="flex justify-between md:pl-40 sm:flex-col md:flex-row flex-col-reverse">
-        <section class="">
-            <div>
-                <div>
-                    <div>Multicurrency</div>
-                    <div class="font-bold">E-wallet</div>
-                </div>
-                <div>
-                    <p>Just register and make a deposit.</p>
-                    <p>This really just takes one minute -- we checked.</p>
-                </div>
-                <div class="flex">
-                    <button href="#" class="px-8 py-2 text-white bg-pink-600 rounded-full">Open Wallet</button>
-                    <div class="inline-flex">
-                        <div class="rounded"><i class="ion-logo-apple text-2xl"></i></div>
-                        <div class="rounded"><i class="ion-logo-google text-2xl"></i></div>
-                    </div>
-                </div>
+      </div>
+    </nav>
+    <main class="mt-16">
+      <div
+        class="flex items-center justify-between md:pl-40 sm:flex-col md:flex-row flex-col-reverse"
+      >
+        <section class="pl-10">
+          <div>
+            <div class="text-6xl tracking-wide" style="color: #053ea3;">
+              <div class="font-light">Multicurrency</div>
+              <div class="inline-flex flex-col">
+                <div class="font-medium">E-wallet</div>
+                <div class="box -mt-4"></div>
+              </div>
             </div>
+            <div class="mt-4 mb-8 text-gray-700">
+              <p>Just register and make a deposit.</p>
+              <p>This really just takes one minute -- we checked.</p>
+            </div>
+            <div class="flex">
+              <button
+                href="#"
+                style="background-color: #fd4575;"
+                class="px-8 py-1 text-sm text-white rounded-full"
+              >
+                Open Wallet
+              </button>
+              <div class="flex justify-around ml-5 w-1/4">
+                <div
+                  class="bg-blue-100 h-10 w-10 rounded-full flex justify-center items-center text-blue-800"
+                >
+                  <i class="ion-logo-apple text-xl"></i>
+                </div>
+                <div
+                  class="bg-blue-100 h-10 w-10 rounded-full flex justify-center items-center text-blue-800"
+                >
+                  <i class="ion-md-play text-xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="">
-            <img src="images/illustration.png" alt="illustration" class="lg:max-w-2xl">
+          <img
+            src="images/illustration.png"
+            alt="illustration"
+            class="lg:max-w-2xl"
+          />
         </section>
-    </div>
-</main>
-</body>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,11 +1,11 @@
 module.exports = {
-    theme: {
-        extend: {
-            fontFamily: {
-                'serif': ['Playfair Display', 'serif'],
-            }
-        }
+  theme: {
+    extend: {
+      fontFamily: {
+        mont: ["Montserrat", "sans-serif"],
+      },
     },
-    variants: {},
-    plugins: [],
+  },
+  variants: {},
+  plugins: [],
 };

@@ -7,10 +7,6 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
-    <link
-      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/build/tailwind.css" />
     <link rel="stylesheet" href="/debug-v1.css" />
     <style>
@@ -67,17 +63,21 @@
               >
                 Open Wallet
               </button>
-              <div class="flex justify-around ml-5 w-1/4">
-                <div
-                  class="bg-blue-100 h-10 w-10 rounded-full flex justify-center items-center text-blue-800"
-                >
-                  <i class="ion-logo-apple text-xl"></i>
-                </div>
-                <div
-                  class="bg-blue-100 h-10 w-10 rounded-full flex justify-center items-center text-blue-800"
-                >
-                  <i class="ion-md-play text-xl"></i>
-                </div>
+              <div
+                class="ml-8 bg-blue-100 h-12 w-12 rounded-full flex justify-center items-center"
+              >
+                <ion-icon
+                  name="logo-apple"
+                  class="text-blue-800 text-lg"
+                ></ion-icon>
+              </div>
+              <div
+                class="ml-4 bg-blue-100 h-12 w-12 rounded-full flex justify-center items-center"
+              >
+                <ion-icon
+                  name="logo-google-playstore"
+                  class="text-blue-800 text-lg"
+                ></ion-icon>
               </div>
             </div>
           </div>
@@ -91,5 +91,6 @@
         </section>
       </div>
     </main>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>

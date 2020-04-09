@@ -1,6 +1,7 @@
-const toggleNav = () =>
+document.querySelector("#mobile-nav-btn").addEventListener("click", () => {
+  // toggle menu div
   document.querySelector("#mobile-nav").classList.toggle("hidden");
-
-const navBtn = document.querySelector("#mobile-nav-btn");
-navBtn.addEventListener("click", toggleNav);
-navBtn.addEventListener("blur", toggleNav);
+  // toggle menu icon
+  document.querySelector(['[data-js="open-icon"]']).classList.toggle("hidden");
+  document.querySelector(['[data-js="close-icon"]']).classList.toggle("hidden");
+});

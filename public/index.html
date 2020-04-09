@@ -40,14 +40,22 @@
         </ul>
         <!-- Hamburger Menu -->
         <button
-          class="sm:hidden text-gray-600 focus:outline-none"
+          class="sm:hidden text-gray-600 focus:outline-none text-2xl"
           id="mobile-nav-btn"
         >
-          <ion-icon name="menu-outline" class="text-2xl"></ion-icon>
+          <ion-icon name="menu-outline" data-js="open-icon"></ion-icon>
+          <ion-icon
+            name="close-outline"
+            class="hidden"
+            data-js="close-icon"
+          ></ion-icon>
         </button>
       </div>
-      <div class="hidden p-5 shadow-md" id="mobile-nav">
-        <ul class="flex flex-col text-gray-600 text-sm">
+      <div
+        class="hidden mb-2 mt-4 shadow-md sm:hidden absolute bg-white w-full"
+        id="mobile-nav"
+      >
+        <ul class="flex flex-col text-gray-600 p-5 pb-4">
           <li class="hover:text-gray-900 mb-3">
             <a href="#">About Us</a>
           </li>
@@ -55,7 +63,7 @@
             <a href="">Legal Information</a>
           </li>
           <li class="hover:text-gray-900 mb-3"><a href="#">FAQ</a></li>
-          <li class="hover:text-gray-900"><a href="#">Support</a></li>
+          <li class="hover:text-gray-900 mb-3"><a href="#">Support</a></li>
         </ul>
       </div>
     </nav>

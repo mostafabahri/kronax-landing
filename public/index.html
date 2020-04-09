@@ -18,23 +18,43 @@
     <title>Kronax - Multicurrency E-Wallet</title>
   </head>
   <body class="antialiased">
+    <!-- Top Navbar -->
     <nav class="max-w-6xl mx-auto my-4">
-      <div class="flex px-4 items-center justify-center lg:justify-start">
+      <div class="flex px-4 items-center justify-between sm:justify-start">
         <div
           class="flex flex-row items-center font-extrabold tracking-wide uppercase text-sm"
         >
           <img src="images/logo.png" alt="logo" />
           <p>Kronax</p>
         </div>
-        <!-- Toggle bar -->
+        <!-- nav menu -->
         <ul
-          class="ml-16 hidden md:flex flex-grow justify-between text-gray-700 text-sm md:max-w-sm"
+          class="ml-16 hidden sm:flex flex-grow justify-between text-gray-700 text-sm sm:max-w-sm"
         >
-          <li class="hover:text-gray-900"><a href="#">About us</a></li>
+          <li class="hover:text-gray-900"><a href="#">About Us</a></li>
           <li class="hover:text-gray-900">
             <a href="">Legal Information</a>
           </li>
           <li class="hover:text-gray-900"><a href="#">FAQ</a></li>
+          <li class="hover:text-gray-900"><a href="#">Support</a></li>
+        </ul>
+        <!-- Hamburger Menu -->
+        <button
+          class="sm:hidden text-gray-600 focus:outline-none"
+          id="mobile-nav-btn"
+        >
+          <ion-icon name="menu-outline" class="text-2xl"></ion-icon>
+        </button>
+      </div>
+      <div class="hidden p-5 shadow-md" id="mobile-nav">
+        <ul class="flex flex-col text-gray-600 text-sm">
+          <li class="hover:text-gray-900 mb-3">
+            <a href="#">About Us</a>
+          </li>
+          <li class="hover:text-gray-900 mb-3">
+            <a href="">Legal Information</a>
+          </li>
+          <li class="hover:text-gray-900 mb-3"><a href="#">FAQ</a></li>
           <li class="hover:text-gray-900"><a href="#">Support</a></li>
         </ul>
       </div>
@@ -94,5 +114,6 @@
       </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

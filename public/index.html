@@ -18,7 +18,7 @@
     <title>Kronax - Multicurrency E-Wallet</title>
   </head>
   <body class="antialiased">
-    <nav class="max-w-6xl mx-auto mt-6">
+    <nav class="max-w-6xl mx-auto my-4">
       <div class="flex px-4 items-center justify-center lg:justify-start">
         <div
           class="flex flex-row items-center font-extrabold tracking-wide uppercase text-sm"
@@ -26,8 +26,9 @@
           <img src="images/logo.png" alt="logo" />
           <p>Kronax</p>
         </div>
+        <!-- Toggle bar -->
         <ul
-          class="ml-16 flex flex-grow justify-between text-gray-700 text-sm md:max-w-sm"
+          class="ml-16 hidden md:flex flex-grow justify-between text-gray-700 text-sm md:max-w-sm"
         >
           <li class="hover:text-gray-900"><a href="#">About us</a></li>
           <li class="hover:text-gray-900">
@@ -38,20 +39,26 @@
         </ul>
       </div>
     </nav>
-    <main class="mt-16">
+    <main class="lg:mt-16">
       <div
-        class="flex items-center justify-between lg:pl-40 lg:flex-row flex-col-reverse"
+        class="flex flex-col items-center justify-between lg:pl-40 lg:flex-row lg:flex-row-reverse"
       >
-        <section class="lg:pl-10">
+        <section class="lg:max-w-2xl">
+          <img src="images/illustration.png" alt="illustration" />
+        </section>
+        <section class="mt-2 lg:pl-10">
           <div>
-            <div class="text-6xl tracking-wide" style="color: #053ea3;">
+            <div
+              class="text-4xl sm:text-5xl md:text-6xl tracking-wide"
+              style="color: #053ea3;"
+            >
               <div class="font-light">Multicurrency</div>
               <div class="inline-flex flex-col">
                 <div class="font-medium">E-wallet</div>
-                <div class="box -mt-4"></div>
+                <div class="box mt-1"></div>
               </div>
             </div>
-            <div class="mt-4 mb-8 text-gray-700">
+            <div class="mt-5 mb-8 text-gray-700 text-sm md:text-base">
               <p>Just register and make a deposit.</p>
               <p>This really just takes one minute -- we checked.</p>
             </div>
@@ -81,13 +88,6 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="">
-          <img
-            src="images/illustration.png"
-            alt="illustration"
-            class="lg:max-w-2xl"
-          />
         </section>
       </div>
     </main>

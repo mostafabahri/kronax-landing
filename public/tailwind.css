@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.box {
+  height: 6px;
+  background-color: rgb(217, 252, 255);
+}
 #mobile-nav {
   transition: all 200ms ease-in-out;
 
@@ -13,4 +17,10 @@
 #mobile-nav.closed {
   visibility: hidden;
   opacity: 0;
+}
+
+.icon-btn {
+  @apply flex justify-center items-center;
+  @apply h-12 w-12 rounded-full;
+  @apply bg-blue-100 text-blue-800 text-lg;
 }

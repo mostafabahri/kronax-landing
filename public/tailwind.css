@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#mobile-nav {
+  transition: all 200ms ease-in-out;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+#mobile-nav.closed {
+  visibility: hidden;
+  opacity: 0;
+}

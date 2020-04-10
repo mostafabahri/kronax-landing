@@ -9,18 +9,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
     <link rel="stylesheet" href="/build/tailwind.css" />
     <link rel="stylesheet" href="/debug-v1.css" />
-    <style>
-      .box {
-        height: 6px;
-        background-color: rgb(217, 252, 255);
-      }
-    </style>
+
     <title>Kronax - Multicurrency E-Wallet</title>
   </head>
   <body class="antialiased">
     <!-- Top Navbar -->
-    <nav class="max-w-6xl mx-auto my-4">
-      <div class="flex px-4 items-center justify-between sm:justify-start">
+    <nav class="my-4 sm:my-6">
+      <div
+        class="flex px-4 sm:px-0 items-center justify-between sm:justify-center sm:max-w-lg md:max-w-xl mx-auto lg:ml-40 lg:justify-start xl:pl-10"
+      >
         <div
           class="flex flex-row items-center font-extrabold tracking-wide uppercase text-sm"
         >
@@ -29,7 +26,7 @@
         </div>
         <!-- nav menu -->
         <ul
-          class="ml-16 hidden sm:flex flex-grow justify-between text-gray-700 text-sm sm:max-w-sm"
+          class="ml-16 hidden sm:flex flex-grow justify-between text-gray-700 text-sm lg:max-w-sm"
         >
           <li class="hover:text-gray-900"><a href="#">About Us</a></li>
           <li class="hover:text-gray-900">
@@ -68,13 +65,16 @@
       </div>
     </nav>
     <main class="lg:mt-16">
+      <!-- Section Wrapper -->
       <div
-        class="flex flex-col items-center md:justify-between lg:pl-40 lg:flex-row lg:flex-row-reverse"
+        class="flex flex-col items-center md:justify-between lg:ml-40 lg:flex-row lg:flex-row-reverse"
       >
-        <section class="lg:max-w-2xl">
+        <!-- Image Section -->
+        <section class="sm:max-w-lg md:max-w-xl">
           <img src="images/illustration.png" alt="illustration" />
         </section>
-        <section class="mt-2 mb-4 lg:pl-10">
+        <!-- Intro Section -->
+        <section class="mt-2 mb-4 xl:pl-10">
           <div
             class="text-4xl sm:text-5xl md:text-6xl tracking-wide"
             style="color: #053ea3;"
